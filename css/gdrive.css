@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(87, 95, 102);
+}
+
+.text {
+    font-size: 50px;
+    color: red;
+    
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
