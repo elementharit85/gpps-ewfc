@@ -1,18 +1,66 @@
 body {
-    background-color: rgb(87, 95, 102);
+    background-color: rgb(255, 255, 255);
 }
 
-.text {
-    font-size: 50px;
-    color: red;
-    
+.gab {
+    padding: 2rem;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    background-color: rgb(145, 216, 103);
+    border-radius: 30px;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+
+.gab1 {
+    padding: 2rem;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    background-color: rgb(94, 255, 0);
+    border-radius: 100px;
+}
+
+.gab-size {
+    padding: 2rem;
+    width: 80px;
+    height: 80px;
+}
+
+.gab-text {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    font-size: 20px;
     text-decoration: none;
-    border-radius: 5px;
+}
+
+.gab-text1 {
+    padding: 0rem;
+    margin-top: 0rem;
+    margin-left: 12px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.gab-link {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 10px;
+}
+
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
 }
