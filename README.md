@@ -1,1 +1,1 @@
-# jeffweb
+Hanya untuk Webhosting saja
