@@ -1,55 +1,65 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(177, 177, 177);
 }
 
-.gab {
+.large-font {
+    font-size: 17px; /* Atau ukuran lain yang diinginkan */
+  }
+
+.gab, .gab1 {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.gab2 {
     padding: 2rem;
     display: flex;
     justify-content: left;
-    margin-top: 10px;
-    background-color: rgb(145, 216, 103);
+    margin-top: 50px;
     border-radius: 30px;
 }
 
+.gab {
+    background-color: rgb(145, 216, 103);
+}
 
-.gab1 {
-    padding: 2rem;
-    display: flex;
-    justify-content: left;
-    margin-top: 10px;
+.gab1, .gab2 {
     background-color: rgb(94, 255, 0);
-    border-radius: 100px;
+    border-radius: 40px;
 }
 
 .gab-size {
-    padding: 2rem;
+    padding: 1rem;
     width: 80px;
     height: 80px;
 }
 
-.gab-text {
+.gab-text, .gab-text1, .gab-link {
     padding: 0.5rem;
-    margin-top: 2rem;
     font-size: 20px;
     text-decoration: none;
+}
+
+.gab-text {
+    margin-top: 0.2rem;
 }
 
 .gab-text1 {
     padding: 0rem;
     margin-top: 0rem;
     margin-left: 12px;
-    font-size: 20px;
-    text-decoration: none;
 }
 
 .gab-link {
     padding: 1rem;
     margin-top: 1rem;
-    font-size: 20px;
-    text-decoration: none;
     border-bottom: 10px;
 }
 
+/* Media Queries */
 
 /* Laptop */
 @media (max-width: 1366px) {
@@ -59,8 +69,91 @@ body {
 }
 
 /* Smartphone */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+/* Media Queries untuk iPhone dan Android */
+
+/* iPhone 5/SE */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    html {
+        font-size: 40%;
+    }
+
+    .navbar, .hero, .about, .kontak {
+        padding: 0.5rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2em; /* Menyesuaikan ukuran teks */
+    }
+
+    .hero .content p {
+        font-size: 1rem; /* Menyesuaikan ukuran teks */
+    }
+
+    .about .row, .kontak .row {
+        flex-direction: column;
+    }
+
+    .about .row .about-img img, .kontak .row form {
+        width: 100%;
+    }
+}
+
+/* iPhone 6/7/8/X */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    html {
+        font-size: 45%;
+    }
+
+    .navbar, .hero, .about, .kontak {
+        padding: 0.8rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2.5em; /* Menyesuaikan ukuran teks */
+    }
+
+    .hero .content p {
+        font-size: 1.2rem; /* Menyesuaikan ukuran teks */
+    }
+
+    .about .row, .kontak .row {
+        flex-direction: column;
+    }
+
+    .about .row .about-img img, .kontak .row form {
+        width: 100%;
+    }
+}
+
+/* Android (berbagai ukuran umum) */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
     html {
         font-size: 50%;
+    }
+
+    .navbar, .hero, .about, .kontak {
+        padding: 0.8rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2.5em; /* Menyesuaikan ukuran teks */
+    }
+
+    .hero .content p {
+        font-size: 1.2rem; /* Menyesuaikan ukuran teks */
+    }
+
+    .about .row, .kontak .row {
+        flex-direction: column;
+    }
+
+    .about .row .about-img img, .kontak .row form {
+        width: 100%;
     }
 }

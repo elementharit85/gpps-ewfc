@@ -23,7 +23,7 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: var(--bg);
     color: white;
-    min-height: 2000px;
+    min-height: 1500px;
 }
 
 /* Navbar css */
@@ -55,7 +55,7 @@ body {
     color: #fff;
     display: inline-block;
     font-size: 20px;
-    margin: 0 2rem ;
+    margin: 0 1rem ;
 }
 
 .navbar .navbar-nav a:hover {
@@ -91,7 +91,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../img/Sampul.jpg');
+    background-image: url('../img/Sampul2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -148,7 +148,7 @@ body {
 .about h2, .kontak h2 {
     text-align: center;
     font-size: 2.6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 }
 
 .about .row {
@@ -160,7 +160,7 @@ body {
 }
 
 .about .row .about-img img {
-    width: 50%;
+    width: 30%;
 }
 
 .about .row .content {
@@ -184,7 +184,7 @@ body {
 
 .kontak .row {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 6rem;
     background-color: #222;
     flex-wrap: wrap;
 }
@@ -217,23 +217,106 @@ body {
 .credit {
     background-color: var(--Pertama);
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 3rem;
-    font-size: 20px;
+    padding: 2rem 0;
+    margin-top: 5rem;
+    font-size: 15px;
 }
 
-/* Media Queris */
+/* Media Queries */
 
 /* Laptop */
 @media (max-width: 1366px) {
     html {
-        font-size: 60%;
+        font-size: 70%;
     }
 }
 
 /* Smartphone */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     html {
         font-size: 40%;
+    }
+}
+
+/* Media Queries untuk iPhone dan Android */
+
+/* iPhone 5/SE */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    html {
+        font-size: 40%;
+    }
+
+    .navbar, .hero, .about, .kontak {
+        padding: 0.5rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2em; /* Menyesuaikan ukuran teks */
+    }
+
+    .hero .content p {
+        font-size: 1rem; /* Menyesuaikan ukuran teks */
+    }
+
+    .about .row, .kontak .row {
+        flex-direction: column;
+    }
+
+    .about .row .about-img img, .kontak .row form {
+        width: 100%;
+    }
+}
+
+/* iPhone 6/7/8/X */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    html {
+        font-size: 45%;
+    }
+
+    .navbar, .hero, .about, .kontak {
+        padding: 0.8rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2.5em; /* Menyesuaikan ukuran teks */
+    }
+
+    .hero .content p {
+        font-size: 1.2rem; /* Menyesuaikan ukuran teks */
+    }
+
+    .about .row, .kontak .row {
+        flex-direction: column;
+    }
+
+    .about .row .about-img img, .kontak .row form {
+        width: 100%;
+    }
+}
+
+/* Android (berbagai ukuran umum) */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar, .hero, .about, .kontak {
+        padding: 0.8rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2.5em; /* Menyesuaikan ukuran teks */
+    }
+
+    .hero .content p {
+        font-size: 1.2rem; /* Menyesuaikan ukuran teks */
+    }
+
+    .about .row, .kontak .row {
+        flex-direction: column;
+    }
+
+    .about .row .about-img img, .kontak .row form {
+        width: 100%;
     }
 }
