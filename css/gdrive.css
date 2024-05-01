@@ -2,6 +2,12 @@ body {
     background-color: rgb(177, 177, 177);
 }
 
+:root {
+    --Terbaru: rgb(145, 216, 103);
+    --last: rgb(94, 255, 0);
+    --Event: rgb(204, 255, 86);
+}
+
 .back-button {
     position: fixed;
     top: 5px;
@@ -25,7 +31,7 @@ body {
     font-size: 17px; /* Atau ukuran lain yang diinginkan */
   }
 
-.gab, .gab1, .gab2 {
+.gab, .gab1, .gab2, .gab3 {
     padding: 0.5rem;
     display: flex;
     justify-content: left;
@@ -43,12 +49,17 @@ body {
 }
 
 .gab {
-    background-color: rgb(145, 216, 103);
+    background-color: var(--Terbaru);
 }
 
 .gab1, .gab2 {
-    background-color: rgb(94, 255, 0);
+    background-color: var(--last);
     border-radius: 40px;
+}
+
+.gab3 {
+    background-color: var(--Event);
+    border-radius: 45px;
 }
 
 .gab-size {
