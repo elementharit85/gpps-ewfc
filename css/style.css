@@ -91,7 +91,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../img/awal.jpg');
+    background-image: url('../img/sampul2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -140,15 +140,21 @@ body {
     box-shadow: 1px 1px 3px rbga(1,1,3 0.5);
 }
 
+.cta:hover {
+    transform: rotate(-1deg); /* Menambahkan efek miring */
+    transition: transform 0.3s;
+}
+
 /* About Section */
 .about, .kontak {
     padding: 10rem 7% 1.4rem;
+    margin-top: 0rem;
 }
 
 .about h2, .kontak h2 {
     text-align: center;
     font-size: 2.6rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 .about .row {
@@ -246,8 +252,8 @@ body {
         font-size: 40%;
     }
 
-    .navbar, .hero, .about, .kontak {
-        padding: 0.5rem;
+    .about, .kontak {
+        padding: 15rem 7% 1.4rem;
     }
 
     .hero .content h1 {
@@ -261,10 +267,6 @@ body {
     .about .row, .kontak .row {
         flex-direction: column;
     }
-
-    .about .row .about-img img, .kontak .row form {
-        width: 100%;
-    }
 }
 
 /* iPhone 6/7/8/X */
@@ -273,8 +275,8 @@ body {
         font-size: 45%;
     }
 
-    .navbar, .hero, .about, .kontak {
-        padding: 0.8rem;
+    .about, .kontak {
+        padding: 15rem 7% 1.4rem;
     }
 
     .hero .content h1 {
@@ -287,10 +289,6 @@ body {
 
     .about .row, .kontak .row {
         flex-direction: column;
-    }
-
-    .about .row .about-img img, .kontak .row form {
-        width: 100%;
     }
 }
 
@@ -300,8 +298,8 @@ body {
         font-size: 50%;
     }
 
-    .navbar, .hero, .about, .kontak {
-        padding: 0.8rem;
+   .about, .kontak {
+        padding: 15rem 7% 1.4rem;
     }
 
     .hero .content h1 {
@@ -316,7 +314,4 @@ body {
         flex-direction: column;
     }
 
-    .about .row .about-img img, .kontak .row form {
-        width: 100%;
     }
-}
