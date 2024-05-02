@@ -1,22 +1,28 @@
 body {
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(95, 95, 95);
 }
 
 :root {
-    --Terbaru: rgb(145, 216, 103);
+    --Terbaru: rgb(154, 221, 115);
     --last: rgb(94, 255, 0);
     --Event: rgb(204, 255, 86);
+}
+
+.h3-link {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 0px;
 }
 
 .back-button {
     position: fixed;
     top: 5px;
-    left: 5px;
-    background-color: #f8f9fa;
+    left: 1260px;
+    background-color: rgba(255, 255, 255, 0.747);
     color: #333;
-    padding: 0px 5px;
-    border-radius: 5px;
-    font-size: 13px;
+    padding: 0px 6px;
+    border-radius: 6px;
+    font-size: 17px;
     z-index: 1000; /* Pastikan tombol kembali muncul di atas semua elemen lain */
 }
 
@@ -64,8 +70,8 @@ body {
 
 .gab-size {
     padding: 1rem;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 
 .gab-text, .gab-text1, .gab-link {
@@ -98,7 +104,7 @@ body {
 
 /* Updated css */
 
-.gab .updated-date, .gab1 .updated-date, .gab2 .updated-date {
+.gab .updated-date, .gab .updated-date, .gab2 .updated-date {
     position: absolute;
     top: 0;
     right: 0;
@@ -110,7 +116,7 @@ body {
   }
 
 /* Media Queries */@media only screen and (max-width: 480px) {
-    .gab, .gab1, .gab2 {
+    .gab, .gab2 {
         padding: 1rem;
         display: block; /* Mengubah tata letak flex menjadi block untuk lebih responsif */
         margin-top: 10px;
@@ -123,7 +129,7 @@ body {
     }
 
     .gab-size {
-        width: 20%; /* Mengubah lebar menjadi 100% untuk memanfaatkan lebar layar */
+        width: 25%; /* Mengubah lebar menjadi 100% untuk memanfaatkan lebar layar */
         height: auto; /* Menyesuaikan tinggi secara otomatis */
     }
 
@@ -135,5 +141,12 @@ body {
 
     .updated-date {
         font-size: 0.7em; /* Mengurangi ukuran font untuk elemen tanggal yang diperbarui */
+    }
+
+    .back-button {
+        position: fixed;
+        top: 5px;
+        left: 290px;
+        font-size: 18px;
     }
 }
