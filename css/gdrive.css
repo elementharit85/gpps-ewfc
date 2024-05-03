@@ -17,7 +17,8 @@ body {
 .back-button {
     position: fixed;
     top: 5px;
-    left: 1260px;
+    right: 10px; /* Mengatur jarak dari sisi kanan */
+    left: auto; /* Mengesampingkan pengaturan sebelumnya jika ada */
     background-color: rgba(255, 255, 255, 0.747);
     color: #333;
     padding: 0px 6px;
@@ -146,7 +147,18 @@ body {
     .back-button {
         position: fixed;
         top: 5px;
-        left: 290px;
+        right: 10px; /* Mengatur jarak dari sisi kanan */
+        left: auto; /* Mengesampingkan pengaturan sebelumnya jika ada */
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .back-button {
+        position: fixed;
+        top: 5px;
+        right: 10px; /* Mengatur jarak dari sisi kanan */
+        left: auto; /* Mengesampingkan pengaturan sebelumnya jika ada */
         font-size: 18px;
     }
 }
