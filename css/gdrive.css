@@ -52,7 +52,7 @@ body {
     display: flex;
     justify-content: left;
     margin-top: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .gab {
@@ -61,7 +61,7 @@ body {
 
 .gab1, .gab2 {
     background-color: var(--last);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .gab3 {
