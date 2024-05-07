@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(63, 63, 63);
 }
 
 :root {
     --Terbaru: rgb(154, 221, 115);
-    --last: rgb(94, 255, 0);
-    --Event: rgb(204, 255, 86);
+    --last: rgb(102, 223, 31);
+    --Event: rgb(194, 235, 100);
 }
 
 .h3-link {
@@ -39,7 +39,7 @@ body {
   }
 
 .gab, .gab1, .gab2, .gab3 {
-    padding: 0.5rem;
+    padding: 0.7rem;
     display: flex;
     justify-content: left;
     margin-top: 5px;
@@ -48,10 +48,10 @@ body {
 }
 
 .gab2 {
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: left;
-    margin-top: 50px;
+    margin-top: 60px;
     border-radius: 30px;
 }
 
@@ -61,21 +61,21 @@ body {
 
 .gab1, .gab2 {
     background-color: var(--last);
-    border-radius: 40px;
+    border-radius: 15px;
 }
 
 .gab3 {
     background-color: var(--Event);
-    border-radius: 45px;
+    border-radius: 25px;
 }
 
 .gab-size {
     padding: 1rem;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 
-.gab-text, .gab-text1, .gab-link {
+.gab-text, .gab-text1 {
     padding: 0.5rem;
     font-size: 20px;
     text-decoration: none;
@@ -83,6 +83,12 @@ body {
 
 .gab-text {
     margin-top: 0.2rem;
+    color: black;
+}
+
+.gab-text2 {
+    font-size: 25px;
+    color: black;
 }
 
 .gab-text1 {
@@ -95,6 +101,8 @@ body {
     padding: 1rem;
     margin-top: 1rem;
     border-bottom: 10px;
+    text-decoration: none;
+    color: blue;
     transition: transform 0.3s ease-in; /* Menambahkan transisi untuk efek animasi */
 }
 
@@ -120,17 +128,28 @@ body {
     .gab, .gab2 {
         padding: 1rem;
         display: block; /* Mengubah tata letak flex menjadi block untuk lebih responsif */
-        margin-top: 10px;
-        border-radius: 10px;
+        margin-top: 15px;
+        border-radius: 20px;
     }
 
-    .gab-text, .gab-text1, .gab-link {
+    .gab-text, .gab-text1 {
         font-size: 15px; /* Mengurangi ukuran font untuk layar yang lebih kecil */
+        padding: 0.3rem;
+    }
+
+    .gab-link {
+        font-size: 17px;
+        padding: 0.3rem;
+    }
+
+    .gab-text2 {
         padding: 0.2rem;
+        font-size: 20px;
+        color: black;
     }
 
     .gab-size {
-        width: 25%; /* Mengubah lebar menjadi 100% untuk memanfaatkan lebar layar */
+        width: 26%; /* Mengubah lebar menjadi 100% untuk memanfaatkan lebar layar */
         height: auto; /* Menyesuaikan tinggi secara otomatis */
     }
 
