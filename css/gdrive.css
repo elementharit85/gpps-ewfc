@@ -9,6 +9,8 @@ body {
 }
 
 .h3-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     font-size: 20px;
     color: rgb(255, 255, 255);
     padding: 0px;
@@ -75,7 +77,13 @@ body {
     height: 80px;
 }
 
+.gab1 .gab-text span {
+    color: rgb(207, 0, 0);
+}
+
 .gab-text, .gab-text1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     padding: 0.5rem;
     font-size: 20px;
     text-decoration: none;
@@ -122,6 +130,10 @@ body {
     padding: 5px;
     border-radius: 5px;
     font-size: 0.8em;
+  }
+
+  .credit {
+    color: white;
   }
 
 /* Media Queries */@media only screen and (max-width: 480px) {
