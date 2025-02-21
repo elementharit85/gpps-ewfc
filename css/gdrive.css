@@ -1,215 +1,88 @@
 body {
-    background-color: rgb(63, 63, 63);
-    background-image: url('../img/backgdrive.jpg');
-}
-
-:root {
-    --Terbaru: rgba(179, 218, 160, 0.952);
-    --last: rgb(136, 255, 0);
-    --Event: rgb(194, 235, 100);
-}
-
-.h3-link {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding: 0px;
-}
-
-.back-button {
-    position: fixed;
-    top: 5px;
-    right: 10px; /* Mengatur jarak dari sisi kanan */
-    left: auto; /* Mengesampingkan pengaturan sebelumnya jika ada */
-    background-color: rgba(255, 255, 255, 0.747);
-    color: #333;
-    padding: 0px 6px;
-    border-radius: 6px;
-    font-size: 17px;
-    z-index: 1000; /* Pastikan tombol kembali muncul di atas semua elemen lain */
-}
-
-.back-button a {
-    text-decoration: none;
-    color: inherit; /* Mewarisi warna dari elemen induk */
-}
-
-
-
-.large-font {
-    font-size: 17px; /* Atau ukuran lain yang diinginkan */
-  }
-
-.gab, .gab1, .gab2, .gab3 {
-    padding: 0.7rem;
+    background: linear-gradient(90deg, #3b5998, #8b9dc3);
     display: flex;
-    justify-content: left;
-    margin-top: 5px;
-    border-radius: 5px;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-.gab2 {
-    padding: 1.5rem;
-    display: flex;
-    justify-content: left;
-    margin-top: 60px;
-    border-radius: 20px;
+.container {
+    text-align: center;
 }
 
-.gab {
-    background-color: var(--Terbaru);
-    opacity: 0.9;
-}
-
-
-.gab1, .gab2 {
-    background-color: var(--last);
-    border-radius: 10px;
-    opacity: 0.9;
-}
-
-.gab3 {
-    background-color: var(--Event);
-    border-radius: 10px;
-    opacity: 0.9;
-}
-
-.gab-size {
-    padding: 1rem;
-    width: 80px;
-    height: 80px;
-}
-
-.gab1 .gab-text span {
-    color: rgb(207, 0, 0);
-}
-
-.gab-text, .gab-text1, .gab-text3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    padding: 0.5rem;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.gab-text {
-    margin-top: 0.2rem;
-    color: black;
-}
-
-.gab-text2 {
-    font-size: 25px;
-    color: black;
-}
-
-.gab-text1 {
-    padding: 0rem;
-    margin-top: 0rem;
-    margin-left: 12px;
-}
-
-.gab-link {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-bottom: 10px;
-    text-decoration: none;
-    color: blue;
-    transition: transform 0.3s ease-in; /* Menambahkan transisi untuk efek animasi */
-}
-
-.gab-link1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 0.5rem;
-    font-size: 20px;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-bottom: 10px;
-    text-decoration: none;
-    color: blue;
-    transition: transform 0.3s ease-in; /* Menambahkan transisi untuk efek animasi */
-}
-
-.gab-link:active {
-    transform: rotate(-2deg); /* Menambahkan efek miring */
-    transition: transform 0.3s;
-}
-
-/* Updated css */
-
-.gab .updated-date, .gab .updated-date, .gab2 .updated-date {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #f8f9fa; /* Warna latar belakang */
-    color: #333; /* Warna teks */
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 0.8em;
-  }
-
-  .credit {
+h1 {
     color: white;
-  }
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
 
-/* Media Queries */@media only screen and (max-width: 480px) {
-    .gab, .gab2 {
-        padding: 1rem;
-        display: block; /* Mengubah tata letak flex menjadi block untuk lebih responsif */
-        margin-top: 2px;
-        border-radius: 10px;
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color: #3b5998; /* Warna Biru */
+    color: white; /* Warna Teks Putih */
+    padding: 25px 100px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 2.5em;
+    transition: background-color 0.3s;
+    border: 2px solid lime; /* Border Hijau */
+}
+
+.button:hover {
+    background-color: lime; /* Warna Hover Hijau */
+    color: black; /* Teks Hitam Saat Hover */
+}
+
+/* iPhone 6/7/8/X */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    html {
+        font-size: 45%;
     }
 
-    .gab-text, .gab-text1 {
-        font-size: 15px; /* Mengurangi ukuran font untuk layar yang lebih kecil */
-        padding: 0.3rem;
+    .about, .kontak {
+        padding: 15rem 7% 1.4rem;
     }
 
-    .gab-link {
-        font-size: 17px;
-        padding: 0.3rem;
+    .hero .content h1 {
+        font-size: 2.5em; /* Menyesuaikan ukuran teks */
     }
 
-    .gab-text2 {
-        padding: 0.2rem;
-        font-size: 20px;
-        color: black;
+    .hero .content p {
+        font-size: 1.2rem; /* Menyesuaikan ukuran teks */
     }
 
-    .gab-size {
-        width: 26%; /* Mengubah lebar menjadi 100% untuk memanfaatkan lebar layar */
-        height: auto; /* Menyesuaikan tinggi secara otomatis */
-    }
-
-    .gab-link {
-        padding: 0.8rem;
-        margin-top: 0.5rem;
-        border-bottom: 5px; /* Mengurangi ketebalan border */
-    }
-
-    .updated-date {
-        font-size: 0.7em; /* Mengurangi ukuran font untuk elemen tanggal yang diperbarui */
-    }
-
-    .back-button {
-        position: fixed;
-        top: 5px;
-        right: 10px; /* Mengatur jarak dari sisi kanan */
-        left: auto; /* Mengesampingkan pengaturan sebelumnya jika ada */
-        font-size: 18px;
+    .about .row, .kontak .row {
+        flex-direction: column;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .back-button {
-        position: fixed;
-        top: 5px;
-        right: 10px; /* Mengatur jarak dari sisi kanan */
-        left: auto; /* Mengesampingkan pengaturan sebelumnya jika ada */
-        font-size: 18px;
+/* Android (berbagai ukuran umum) */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    html {
+        font-size: 50%;
     }
-}
+
+   .about, .kontak {
+        padding: 15rem 7% 1.4rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2.5em; /* Menyesuaikan ukuran teks */
+    }
+
+    .hero .content p {
+        font-size: 1.2rem; /* Menyesuaikan ukuran teks */
+    }
+
+    .about .row, .kontak .row {
+        flex-direction: column;
+    }
+
+    }
